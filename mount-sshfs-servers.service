@@ -11,7 +11,7 @@ WantedBy=default.target
 [Service]
 Type=forking
 ExecStart=/opt/sshfs/mount_ssh_servers.sh
-ExecStop=/usr/bin/fusermount -u /mnt/192.168.120.32/
+ExecStop=/usr/bin/fusermount3 -u /mnt/192.168.120.32/
 Restart=on-failure
 RestartSec=20
 
